@@ -24,7 +24,10 @@ public class NewsSource {
 	private String type;
 
 	@Persistent
-	private Locale locale; 
+	private String language;
+	
+	@Persistent
+	private String country;
 	
 	@Persistent
 	private boolean hasCategories;
@@ -41,8 +44,9 @@ public class NewsSource {
 	@Persistent
 	private String defaultUrl;
 
-	public NewsSource(String name, boolean hasCategories, ArrayList<String> categories, ArrayList<String> categoryUrls, String defaultUrl,
-		String type, boolean preferred) {
+	public NewsSource(String name, boolean hasCategories, String language, String country,
+			ArrayList<String> categories, ArrayList<String> categoryUrls, String defaultUrl,
+			String type, boolean preferred) {
 		
 		this.title = name;
 		this.hasCategories = hasCategories;
@@ -50,24 +54,32 @@ public class NewsSource {
 		this.categoryUrls = categoryUrls;
 		this.defaultUrl = defaultUrl;
 		this.type = type;
+		this.language = language;
+		this.country = country;
 		this.preferred = preferred;
 	}
 	
 	public NewsSource() {
-	}
-
-	public Locale getLocale() {
-		return locale;
-	}
-
-	public void setLocale(Locale locale) {
-		this.locale = locale;
-	}
-
-	public void setLocale(String country, String language) {
-		this.locale = new Locale(language, country);
+		this.language = Locale.getDefault().getLanguage();
+		this.country = Locale.getDefault().getCountry();
 	}
 	
+	public String getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
 	public String getTitle() {
 		return title;
 	}

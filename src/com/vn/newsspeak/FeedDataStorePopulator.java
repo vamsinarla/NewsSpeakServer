@@ -31,7 +31,7 @@ public class FeedDataStorePopulator extends HttpServlet {
 	 */
 	private ArrayList<NewsSource> sources;
 	private NewsSource source;
-	private String language; 
+	private String language;
 	
 	 /**
      * Processes a GET request contained in the request and sends response
@@ -115,9 +115,9 @@ public class FeedDataStorePopulator extends HttpServlet {
 				} else if (name.equalsIgnoreCase("type")) {
 					source.setType(builder.toString());
 				} else if (name.equalsIgnoreCase("language")) {
-					language = builder.toString();
+					source.setLanguage(builder.toString());
 				} else if (name.equalsIgnoreCase("country")) {
-					source.setLocale(new Locale(language, builder.toString()));
+					source.setCountry(builder.toString());
 				} else if (name.equalsIgnoreCase("preferred")) {
 					source.setPreferred(builder.toString().equalsIgnoreCase("true") ? true : false);
 				} else if (name.equalsIgnoreCase("hascategories")) {

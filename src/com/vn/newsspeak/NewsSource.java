@@ -1,6 +1,7 @@
 package com.vn.newsspeak;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.PersistenceCapable;
@@ -22,6 +23,9 @@ public class NewsSource {
 	@Persistent
 	private String type;
 
+	@Persistent
+	private Locale locale; 
+	
 	@Persistent
 	private boolean hasCategories;
 	
@@ -52,6 +56,18 @@ public class NewsSource {
 	public NewsSource() {
 	}
 
+	public Locale getLocale() {
+		return locale;
+	}
+
+	public void setLocale(Locale locale) {
+		this.locale = locale;
+	}
+
+	public void setLocale(String country, String language) {
+		this.locale = new Locale(language, country);
+	}
+	
 	public String getTitle() {
 		return title;
 	}

@@ -3,6 +3,7 @@ package com.vn.newsspeak;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.logging.Logger;
 
 import javax.jdo.PersistenceManager;
@@ -30,6 +31,7 @@ public class FeedDataStorePopulator extends HttpServlet {
 	 */
 	private ArrayList<NewsSource> sources;
 	private NewsSource source;
+	private String language; 
 	
 	 /**
      * Processes a GET request contained in the request and sends response
@@ -40,37 +42,7 @@ public class FeedDataStorePopulator extends HttpServlet {
 	@Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
                 throws IOException {
-    	
-		/*ArrayList<String> categories = new ArrayList<String>(
-											Arrays.asList("US", 
-													"World", 
-													"Business", 
-													"Sports", 
-													"Politics",
-													"Technology", 
-													"Opinion", 
-													"Health"));
-		
-		ArrayList<String> categoryURLs = new ArrayList<String>(
-												Arrays.asList("http://feeds.nytimes.com/nyt/rss/HomePage",
-														"http://feeds.nytimes.com/nyt/rss/World",
-														"http://feeds.nytimes.com/nyt/rss/Business",
-														"http://feeds1.nytimes.com/nyt/rss/Sports",
-														"http://feeds.nytimes.com/nyt/rss/Politics",
-														"http://feeds.nytimes.com/nyt/rss/Technology",
-														"http://feeds.nytimes.com/nyt/rss/Opinion",
-														"http://feeds.nytimes.com/nyt/rss/Health"));
-														
-		
-		// Put in a NewsSource object
-		NewsSource newsSource = new NewsSource("New York Times",
-												true,
-												categories,
-												categoryURLs,
-												"http://feeds.nytimes.com/nyt/rss/HomePage"
-												);*/
-		
-		
+   	
 		// Add the {@code NewsSource} object to the persistent store
         PersistenceManager pm = PMF.get().getPersistenceManager();
         PrintWriter out = resp.getWriter();
@@ -142,6 +114,10 @@ public class FeedDataStorePopulator extends HttpServlet {
 					source.setTitle(builder.toString());
 				} else if (name.equalsIgnoreCase("type")) {
 					source.setType(builder.toString());
+				} else if (name.equalsIgnoreCase("language")) {
+					language = builder.toString();
+				} else if (name.equalsIgnoreCase("country")) {
+					source.setLocale(new Locale(language, builder.toString()));
 				} else if (name.equalsIgnoreCase("preferred")) {
 					source.setPreferred(builder.toString().equalsIgnoreCase("true") ? true : false);
 				} else if (name.equalsIgnoreCase("hascategories")) {

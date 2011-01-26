@@ -4,6 +4,8 @@
 <source>
     <name>New York Times</name>
     <type>newspaper</type>
+    <language>en</language>
+    <country>US</country>
     <preferred>true</preferred>
     <hascategories>true</hascategories>
     <categories>
@@ -32,6 +34,8 @@
 <source>
     <name>Wall Street Journal</name>
     <type>newspaper</type>
+    <language>en</language>
+    <country>US</country>
     <preferred>true</preferred>
     <hascategories>true</hascategories>
     <categories>
@@ -60,6 +64,8 @@
 <source>
     <name>USA Today</name>
     <type>newspaper</type>
+    <language>en</language>
+    <country>US</country>
     <preferred>true</preferred>
     <hascategories>true</hascategories>
     <categories>
@@ -88,6 +94,8 @@
 <source>
     <name>CNN US</name>
     <type>blog</type>
+    <language>en</language>
+    <country>US</country>
     <preferred>true</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://rss.cnn.com/rss/cnn_us.rss</defaultLink>
@@ -96,6 +104,8 @@
 <source>
     <name>Los Angeles Times</name>
     <type>newspaper</type>
+    <language>en</language>
+    <country>US</country>
     <preferred>true</preferred>
     <hascategories>true</hascategories>
     <categories>
@@ -124,6 +134,8 @@
 <source>
     <name>Huffington Post</name>
     <type>blog</type>
+    <language>en</language>
+    <country>US</country>
     <preferred>true</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://feeds.huffingtonpost.com/huffingtonpost/raw_feed</defaultLink>
@@ -132,6 +144,8 @@
 <source>
     <name>TechCrunch</name>
     <type>blog</type>
+    <language>en</language>
+    <country>US</country>
     <preferred>true</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://feeds.feedburner.com/Techcrunch</defaultLink>
@@ -140,6 +154,8 @@
 <source>
     <name>Mashable</name>
     <type>blog</type>
+    <language>en</language>
+    <country>US</country>
     <preferred>true</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://feeds.mashable.com/Mashable</defaultLink>
@@ -148,6 +164,8 @@
 <source>
     <name>Daily Beast</name>
     <type>blog</type>
+    <language>en</language>
+    <country>US</country>
     <preferred>true</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://www.tdbimg.com/ext/rss/cheatsheet/rss_cheatsheet.xml</defaultLink>
@@ -156,6 +174,8 @@
 <source>
     <name>NY Daily News</name>
     <type>newspaper</type>
+    <language>en</language>
+    <country>US</country>
     <preferred>true</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://feeds.nydailynews.com/nydnrss/news</defaultLink>
@@ -164,6 +184,8 @@
 <source>
     <name>Washington Post</name>
     <type>newspaper</type>
+    <language>en</language>
+    <country>US</country>
     <preferred>true</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://feeds.washingtonpost.com/wp-dyn/rss/print/index_xml</defaultLink>
@@ -172,6 +194,8 @@
 <source>
     <name>Read Write Web</name>
     <type>blog</type>
+    <language>en</language>
+    <country>US</country>
     <preferred>true</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://feeds.feedburner.com/readwriteweb</defaultLink>

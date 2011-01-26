@@ -1,0 +1,51 @@
+=========================================
+AlchemyAPI Java SDK version 0.5: Examples
+=========================================
+
+These are Java code examples for the AlchemyAPI SDK.
+
+
+RUNNING EXAMPLES
+
+Several code examples are included to illustrate using the AlchemyAPI
+for named entity extraction, text classification, language identification,
+and other tasks.
+
+All code samples should be run from within the "testdir" directory.
+
+To run these code samples you must first edit the (testdir/api_key.txt) file, 
+adding your assigned AlchemyAPI key.  You must also compile and install the 
+AlchemyAPI Java SDK (see ../README for installation instructions).
+
+Code Samples:
+
+   1. Entity Extraction: java -jar ../dist/AlchemyAPI-Entity-Test.jar
+
+   2. Concept Tagging: java -jar ../dist/AlchemyAPI-Concept-Test.jar
+
+   3. Keyword Extraction: java -jar ../dist/AlchemyAPI-Keyword-Test.jar
+
+   4. Text Categorization: java -jar ../dist/AlchemyAPI-Category-Test.jar
+
+   5. Language Identification: java -jar ../dist/AlchemyAPI-Language-Test.jar
+
+   6. HTML Text Extraction: java -jar ../dist/AlchemyAPI-TextExtract-Test.jar
+
+   7. HTML Structured Content Scraping: java -jar ../dist/AlchemyAPI-ConstraintQuery-Test.jar
+
+   8. Microformats Extraction: java -jar ../dist/AlchemyAPI-Microformats-Test.jar
+
+   9. RSS / ATOM Feed Links Extraction: java -jar ../dist/AlchemyAPI-FeedLinks-Test.jar
+
+  10. Example of using the parameters object: java -jar ../dist/AlchemyAPI-Parameter-Test.jar
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2009-2010 Orchestr8, LLC.
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl version 5.8.5 or, at your option,
+any later version of Perl 5 you may have available.
+
+

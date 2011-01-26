@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sources>
+<source>
+    <name>New York Times</name>
+    <type>newspaper</type>
+    <preferred>true</preferred>
+    <hascategories>true</hascategories>
+    <categories>
+        <title>US</title>
+        <title>Business</title>
+        <title>World</title>
+        <title>Politics</title>
+        <title>Sports</title>
+        <title>Technology</title>
+        <title>Health</title>
+        <title>Opinion</title>
+    </categories>
+    <categoryUrls>
+        <link>http://feeds.nytimes.com/nyt/rss/HomePage</link>
+        <link>http://feeds.nytimes.com/nyt/rss/Business</link>
+        <link>http://feeds.nytimes.com/nyt/rss/World</link>
+        <link>http://feeds.nytimes.com/nyt/rss/Politics</link>
+        <link>http://feeds1.nytimes.com/nyt/rss/Sports</link>
+        <link>http://feeds.nytimes.com/nyt/rss/Technology</link>
+        <link>http://feeds.nytimes.com/nyt/rss/Health</link>
+        <link>http://feeds.nytimes.com/nyt/rss/Opinion</link>
+    </categoryUrls>
+    <defaultLink>http://feeds.nytimes.com/nyt/rss/HomePage</defaultLink>
+</source>
+
+<source>
+    <name>Wall Street Journal</name>
+    <type>newspaper</type>
+    <preferred>true</preferred>
+    <hascategories>true</hascategories>
+    <categories>
+        <title>US</title>
+        <title>Business</title>
+        <title>World</title>
+        <title>Politics</title>
+        <title>Sports</title>
+        <title>Technology</title>
+        <title>Health</title>
+        <title>Opinion</title>
+    </categories>
+    <categoryUrls>
+        <link>http://online.wsj.com/xml/rss/3_7011.xml</link>
+        <link>http://online.wsj.com/xml/rss/3_7014.xml</link>
+        <link>http://online.wsj.com/xml/rss/3_7085.xml</link>
+        <link>http://online.wsj.com/xml/rss/3_7087.xml</link>
+        <link>http://online.wsj.com/xml/rss/3_7204.xml</link>
+        <link>http://online.wsj.com/xml/rss/3_7455.xml</link>
+        <link>http://online.wsj.com/xml/rss/3_7089.xml</link>
+        <link>http://online.wsj.com/xml/rss/3_7041.xml</link>
+    </categoryUrls>
+    <defaultLink>http://online.wsj.com/xml/rss/3_7011.xml</defaultLink>
+</source>
+
+<source>
+    <name>USA Today</name>
+    <type>newspaper</type>
+    <preferred>true</preferred>
+    <hascategories>true</hascategories>
+    <categories>
+        <title>US</title>
+        <title>Business</title>
+        <title>World</title>
+        <title>Politics</title>
+        <title>Sports</title>
+        <title>Technology</title>
+        <title>Health</title>
+        <title>Opinion</title>
+    </categories>
+    <categoryUrls>
+        <link>http://rssfeeds.usatoday.com/usatoday-NewsTopStories</link>
+        <link>http://rssfeeds.usatoday.com/UsatodaycomMoney-TopStories</link>
+        <link>http://rssfeeds.usatoday.com/UsatodaycomWorld-TopStories</link>
+        <link>http://rssfeeds.usatoday.com/TP-OnPolitics</link>
+        <link>http://rssfeeds.usatoday.com/UsatodaycomSports-TopStories</link>
+        <link>http://rssfeeds.usatoday.com/usatoday-TechTopStories</link>
+        <link>http://rssfeeds.usatoday.com/UsatodaycomHealth-TopStories</link>
+        <link>http://rssfeeds.usatoday.com/News-Opinion</link>
+    </categoryUrls>
+    <defaultLink>http://rssfeeds.usatoday.com/usatoday-NewsTopStories</defaultLink>
+</source>
+
+<source>
+    <name>CNN US</name>
+    <type>blog</type>
+    <preferred>true</preferred>
+    <hascategories>false</hascategories>
+    <defaultLink>http://rss.cnn.com/rss/cnn_us.rss</defaultLink>
+</source>
+
+<source>
+    <name>Los Angeles Times</name>
+    <type>newspaper</type>
+    <preferred>true</preferred>
+    <hascategories>true</hascategories>
+    <categories>
+        <title>US</title>
+        <title>Business</title>
+        <title>World</title>
+        <title>Politics</title>
+        <title>Sports</title>
+        <title>Technology</title>
+        <title>Health</title>
+        <title>Opinion</title>
+    </categories>
+    <categoryUrls>
+        <link>http://feeds.latimes.com/latimes/news</link>
+        <link>http://feeds.latimes.com/latimes/business</link>
+        <link>http://feeds.latimes.com/latimes/news/nationworld/world</link>
+        <link>http://feeds.latimes.com/latimes/news/politics/</link>
+        <link>http://feeds.latimes.com/latimes/sports</link>
+        <link>http://feeds.latimes.com/latimes/technology</link>
+        <link>http://feeds.latimes.com/latimes/features/health/</link>
+        <link>http://feeds2.feedburner.com/latimes/news/opinion/commentary/</link>
+    </categoryUrls>
+    <defaultLink>http://feeds.latimes.com/latimes/news</defaultLink>
+</source>
+
+<source>
+    <name>Huffington Post</name>
+    <type>blog</type>
+    <preferred>true</preferred>
+    <hascategories>false</hascategories>
+    <defaultLink>http://feeds.huffingtonpost.com/huffingtonpost/raw_feed</defaultLink>
+</source>
+
+<source>
+    <name>TechCrunch</name>
+    <type>blog</type>
+    <preferred>true</preferred>
+    <hascategories>false</hascategories>
+    <defaultLink>http://feeds.feedburner.com/Techcrunch</defaultLink>
+</source>
+
+<source>
+    <name>Mashable</name>
+    <type>blog</type>
+    <preferred>true</preferred>
+    <hascategories>false</hascategories>
+    <defaultLink>http://feeds.mashable.com/Mashable</defaultLink>
+</source>
+
+<source>
+    <name>Daily Beast</name>
+    <type>blog</type>
+    <preferred>true</preferred>
+    <hascategories>false</hascategories>
+    <defaultLink>http://www.tdbimg.com/ext/rss/cheatsheet/rss_cheatsheet.xml</defaultLink>
+</source>
+
+<source>
+    <name>NY Daily News</name>
+    <type>newspaper</type>
+    <preferred>true</preferred>
+    <hascategories>false</hascategories>
+    <defaultLink>http://feeds.nydailynews.com/nydnrss/news</defaultLink>
+</source>
+
+<source>
+    <name>Washington Post</name>
+    <type>newspaper</type>
+    <preferred>true</preferred>
+    <hascategories>false</hascategories>
+    <defaultLink>http://feeds.washingtonpost.com/wp-dyn/rss/print/index_xml</defaultLink>
+</source>
+
+<source>
+    <name>Read Write Web</name>
+    <type>blog</type>
+    <preferred>true</preferred>
+    <hascategories>false</hascategories>
+    <defaultLink>http://feeds.feedburner.com/readwriteweb</defaultLink>
+</source>
+
+</sources>

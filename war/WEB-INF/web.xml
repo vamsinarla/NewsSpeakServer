@@ -49,7 +49,16 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
        <servlet-name>MailHandlerServlet</servlet-name>
        <url-pattern>/_ah/mail/*</url-pattern>
     </servlet-mapping>
-    
+ 
+    <servlet>
+       <servlet-name>SearchServlet</servlet-name>
+       <servlet-class>com.vn.newsspeak.SearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+       <servlet-name>SearchServlet</servlet-name>
+       <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+       
 	<security-constraint>
 		<web-resource-collection>
 		  <url-pattern>/_ah/mail/*</url-pattern>

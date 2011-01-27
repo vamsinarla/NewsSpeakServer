@@ -23,6 +23,17 @@ public class Email {
 	@Persistent
 	private String from;
 
+	@Persistent
+	private String to;
+	
+	public String getTo() {
+		return to;
+	}
+
+	public void setTo(String to) {
+		this.to = to;
+	}
+
 	public String getSubject() {
 		return subject;
 	}
@@ -47,8 +58,9 @@ public class Email {
 		this.from = from;
 	}
 
-	public Email(String from, String subject, String body) {
+	public Email(String from, String to, String subject, String body) {
 		this.from = from;
+		this.to = to;
 		this.subject = subject;
 		this.body = body;
 	}

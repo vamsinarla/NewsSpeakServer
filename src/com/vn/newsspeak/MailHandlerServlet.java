@@ -5,6 +5,7 @@ import java.util.Properties;
 
 import javax.jdo.PersistenceManager;
 import javax.mail.Address;
+import javax.mail.Message.RecipientType;
 import javax.mail.MessagingException;
 import javax.mail.Multipart;
 import javax.mail.Part;
@@ -14,9 +15,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * Handle all incoming emails to appEngine.
+ * @author narla
+ *
+ */
 public class MailHandlerServlet extends HttpServlet {
 
-
+	/**
+	 * Default UID
+	 */
 	private static final long serialVersionUID = 1L;
 
 	public void doPost(HttpServletRequest req, HttpServletResponse resp)
@@ -31,9 +39,13 @@ public class MailHandlerServlet extends HttpServlet {
 			MimeMessage message = new MimeMessage(email, req.getInputStream());
 			String summary = message.getSubject();
 			String description = getText(message);
-			Address[] addresses = message.getFrom();
+			Address[] fromAddresses = message.getFrom();
+			Address[] toAddresses = message.getRecipients(RecipientType.TO);
 			
-			Email emailObj = new Email(addresses[0].toString(), summary, description);
+			Email emailObj = new Email(fromAddresses[0].toString(), 
+										toAddresses[0].toString(),
+										summary,
+										description);
 			pm.makePersistent(emailObj);
 		} catch (Exception e) {
 			e.printStackTrace();

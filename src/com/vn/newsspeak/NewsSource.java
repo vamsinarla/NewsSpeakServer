@@ -147,6 +147,7 @@ public class NewsSource {
 			result.put("type", (String) singleResult.getProperty("type"));
 			result.put("language", (String) singleResult.getProperty("language"));
 			result.put("country", (String) singleResult.getProperty("country"));
+			result.put("defaultUrl", (String) singleResult.getProperty("defaultUrl"));
 			result.put("hasCategories", singleResult.getProperty("hasCategories"));
 			result.put("preferred", singleResult.getProperty("preferred"));
 			result.put("categories", singleResult.getProperty("categories"));

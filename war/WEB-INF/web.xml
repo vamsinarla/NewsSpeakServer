@@ -33,12 +33,12 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
     </servlet-mapping>
     
     <servlet>
-       <servlet-name>FeaturedSourcesServlet</servlet-name>
-       <servlet-class>com.vn.newsspeak.FeaturedSourcesServlet</servlet-class>
+       <servlet-name>FetchSourceServlet</servlet-name>
+       <servlet-class>com.vn.newsspeak.FetchSourceServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-       <servlet-name>FeaturedSourcesServlet</servlet-name>
-       <url-pattern>/getFeaturedSources</url-pattern>
+       <servlet-name>FetchSourceServlet</servlet-name>
+       <url-pattern>/fetchSource</url-pattern>
     </servlet-mapping>
     
     <servlet>

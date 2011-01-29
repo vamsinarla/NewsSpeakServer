@@ -8,7 +8,10 @@ import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
+import com.google.appengine.api.datastore.Entity;
 import com.google.appengine.api.datastore.Key;
+import com.google.appengine.repackaged.org.json.JSONException;
+import com.google.appengine.repackaged.org.json.JSONObject;
 
 @PersistenceCapable
 public class NewsSource {
@@ -134,5 +137,24 @@ public class NewsSource {
 
 	public void setDefaultUrl(String defaultUrl) {
 		this.defaultUrl = defaultUrl;
+	}
+
+	public static JSONObject createJSON(Entity singleResult) throws JSONException {
+		// We are processing NewsSource ONLY here
+		if (singleResult.getKind().equalsIgnoreCase("NewsSource")) {
+			JSONObject result = new JSONObject();
+			result.put("title", (String) singleResult.getProperty("title"));
+			result.put("type", (String) singleResult.getProperty("type"));
+			result.put("language", (String) singleResult.getProperty("language"));
+			result.put("country", (String) singleResult.getProperty("country"));
+			result.put("hasCategories", singleResult.getProperty("hasCategories"));
+			result.put("preferred", singleResult.getProperty("preferred"));
+			result.put("categories", singleResult.getProperty("categories"));
+			result.put("categoryUrls", singleResult.getProperty("categoryUrls"));
+			
+			return result;
+		}
+		
+		return null;
 	}
 }

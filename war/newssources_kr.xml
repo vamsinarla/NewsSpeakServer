@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sources>
+<source>
+	<name>Yonhap News</name>
+	<type>newspaper</type>
+	<language>en</language>
+	<country>KR</country>
+	<perferred>false</perferred>
+	<hasCategories>false</hasCategories>
+	<categories>
+		<title>Headlines</title>
+		<title>National</title>
+		<title>Business</title>
+		<title>Technology</title>
+		<title>Sports/Culture</title>
+		<title>North Korea</title>
+	</categories>
+	<categoryUrls>
+		<link>http://www.yonhapnews.co.kr/RSS/en_headline.xml</link>
+		<link>http://www.yonhapnews.co.kr/RSS/en_national.xml</link>
+		<link>http://www.yonhapnews.co.kr/RSS/en_business.xml</link>
+		<link>http://www.yonhapnews.co.kr/RSS/en_tech.xml</link>
+		<link>http://www.yonhapnews.co.kr/RSS/en_culture.xml</link>
+		<link>http://www.yonhapnews.co.kr/RSS/en_northkorea.xml</link>
+	</categoryUrls>
+	 <defaultLink>http://www.yonhapnews.co.kr/RSS/en_headline.xml</defaultLink>
+</source>
+
+<source>
+	<name>The Korea Times</name>
+	<type>newspaper</type>
+	<language>EN</language>
+	<country>KR</country>
+	<preferred>false</preferred>
+	<hasCategories>false</hasCategories>
+	<defaultLink>http://www.koreatimes.co.kr/www/rss/seoul.xml</defaultLink>
+</source>
+
+<source>
+	<name>The Hankyoreh</name>
+	<type>newspaper</type>
+	<language>en</language>
+	<country>KR</country>
+	<perferred>false</perferred>
+	<hasCategories>false</hasCategories>
+	<defaultLink>http://www.hani.co.kr/rss/english_edition/</defaultLink>
+</source>
+
+</sources>

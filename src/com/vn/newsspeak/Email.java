@@ -10,6 +10,7 @@ import com.google.appengine.api.datastore.Key;
 @PersistenceCapable
 public class Email {
 
+	@SuppressWarnings("unused")
 	@PrimaryKey
 	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
 	private Key key; 

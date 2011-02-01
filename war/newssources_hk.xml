@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sources>
+
+<soruce>
+	<name>The Standard</name>
+	<language>en</language>
+	<country>HK</country>
+	<type>newspaper</type>
+	<preferred>false</preferred>
+	<hasCategories>false</hasCategories>
+	<defaultLink>http://finance.thestandard.com.hk/feed/breaking.xml</defaultLink>
+</soruce>
+
+</sources>

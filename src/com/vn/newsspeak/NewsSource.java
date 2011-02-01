@@ -16,6 +16,7 @@ import com.google.appengine.repackaged.org.json.JSONObject;
 @PersistenceCapable
 public class NewsSource {
 	
+	@SuppressWarnings("unused")
 	@PrimaryKey
 	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
 	private Key key; 

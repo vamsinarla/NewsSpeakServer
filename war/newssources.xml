@@ -6,8 +6,8 @@
     <type>newspaper</type>
     <language>en</language>
     <country>US</country>
-    <preferred>true</preferred>
-    <hascategories>true</hascategories>
+    <preferred>false</preferred>
+    <hascategories>false</hascategories>
     <categories>
         <title>US</title>
         <title>Business</title>
@@ -36,8 +36,8 @@
     <type>newspaper</type>
     <language>en</language>
     <country>US</country>
-    <preferred>true</preferred>
-    <hascategories>true</hascategories>
+    <preferred>false</preferred>
+    <hascategories>false</hascategories>
     <categories>
         <title>US</title>
         <title>Business</title>
@@ -66,8 +66,8 @@
     <type>newspaper</type>
     <language>en</language>
     <country>US</country>
-    <preferred>true</preferred>
-    <hascategories>true</hascategories>
+    <preferred>false</preferred>
+    <hascategories>false</hascategories>
     <categories>
         <title>US</title>
         <title>Business</title>
@@ -96,7 +96,7 @@
     <type>blog</type>
     <language>en</language>
     <country>US</country>
-    <preferred>true</preferred>
+    <preferred>false</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://rss.cnn.com/rss/cnn_us.rss</defaultLink>
 </source>
@@ -106,8 +106,8 @@
     <type>newspaper</type>
     <language>en</language>
     <country>US</country>
-    <preferred>true</preferred>
-    <hascategories>true</hascategories>
+    <preferred>false</preferred>
+    <hascategories>false</hascategories>
     <categories>
         <title>US</title>
         <title>Business</title>
@@ -136,7 +136,7 @@
     <type>blog</type>
     <language>en</language>
     <country>US</country>
-    <preferred>true</preferred>
+    <preferred>false</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://feeds.huffingtonpost.com/huffingtonpost/raw_feed</defaultLink>
 </source>
@@ -146,7 +146,7 @@
     <type>blog</type>
     <language>en</language>
     <country>US</country>
-    <preferred>true</preferred>
+    <preferred>false</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://feeds.feedburner.com/Techcrunch</defaultLink>
 </source>
@@ -156,7 +156,7 @@
     <type>blog</type>
     <language>en</language>
     <country>US</country>
-    <preferred>true</preferred>
+    <preferred>false</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://feeds.mashable.com/Mashable</defaultLink>
 </source>
@@ -166,7 +166,7 @@
     <type>blog</type>
     <language>en</language>
     <country>US</country>
-    <preferred>true</preferred>
+    <preferred>false</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://www.tdbimg.com/ext/rss/cheatsheet/rss_cheatsheet.xml</defaultLink>
 </source>
@@ -176,7 +176,7 @@
     <type>newspaper</type>
     <language>en</language>
     <country>US</country>
-    <preferred>true</preferred>
+    <preferred>false</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://feeds.nydailynews.com/nydnrss/news</defaultLink>
 </source>
@@ -186,7 +186,7 @@
     <type>newspaper</type>
     <language>en</language>
     <country>US</country>
-    <preferred>true</preferred>
+    <preferred>false</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://feeds.washingtonpost.com/wp-dyn/rss/print/index_xml</defaultLink>
 </source>
@@ -196,7 +196,7 @@
     <type>blog</type>
     <language>en</language>
     <country>US</country>
-    <preferred>true</preferred>
+    <preferred>false</preferred>
     <hascategories>false</hascategories>
     <defaultLink>http://feeds.feedburner.com/readwriteweb</defaultLink>
 </source>

@@ -13,7 +13,16 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>FeedHandler</servlet-name>
 		<url-pattern>/feed</url-pattern>
 	</servlet-mapping>
-	
+
+	<servlet>
+		<servlet-name>FeedHandler2</servlet-name>
+		<servlet-class>com.vn.newsspeak.FeedServlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FeedHandler2</servlet-name>
+		<url-pattern>/feed2</url-pattern>
+	</servlet-mapping>
+		
 	<servlet>
        <servlet-name>ArticleHandler</servlet-name>
        <servlet-class>com.vn.newsspeak.ArticleServlet</servlet-class>
@@ -22,7 +31,16 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	   <servlet-name>ArticleHandler</servlet-name>
 	   <url-pattern>/article</url-pattern>
 	</servlet-mapping>
-	
+
+	<servlet>
+       <servlet-name>ArticleHandler2</servlet-name>
+       <servlet-class>com.vn.newsspeak.ArticleServlet2</servlet-class>
+    </servlet>
+	<servlet-mapping>
+	   <servlet-name>ArticleHandler2</servlet-name>
+	   <url-pattern>/article2</url-pattern>
+	</servlet-mapping>
+		
 	<servlet>
        <servlet-name>FeedDataStorePopulator</servlet-name>
        <servlet-class>com.vn.newsspeak.FeedDataStorePopulator</servlet-class>
@@ -39,6 +57,15 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
     <servlet-mapping>
        <servlet-name>FetchSourceServlet</servlet-name>
        <url-pattern>/fetchSource</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+       <servlet-name>FeaturedSourcesServlet</servlet-name>
+       <servlet-class>com.vn.newsspeak.FeaturedSourcesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+       <servlet-name>FeaturedSourcesServlet</servlet-name>
+       <url-pattern>/featuredSources</url-pattern>
     </servlet-mapping>
     
     <servlet>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sources>
+<source>
+	<name>Google News</name>
+	<language></language>
+	<country></country>
+	<type>blog</type>
+	<preferred>true</preferred>
+	<hasCategories>true</hasCategories>
+	<defaultLink>http://news.google.com/news</defaultLink>
+	<categories>
+        <title>Top Stories</title>
+        <title>Most Popular</title>
+        <title>Country</title>
+        <title>World</title>
+        <title>Business</title>
+        <title>Sci/Tech</title>
+        <title>Entertainment</title>
+        <title>Sports</title>
+        <title>Health</title>
+    </categories>
+    <categoryUrls>
+        <link>http://news.google.com/news</link>
+        <link>http://news.google.com/news</link>
+        <link>http://news.google.com/news</link>
+        <link>http://news.google.com/news</link>
+        <link>http://news.google.com/news</link>
+        <link>http://news.google.com/news</link>
+        <link>http://news.google.com/news</link>
+        <link>http://news.google.com/news</link>
+        <link>http://news.google.com/news</link>
+    </categoryUrls>
+</source>
+</sources>

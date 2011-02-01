@@ -3,8 +3,6 @@ package com.vn.newsspeak;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Locale;
-import java.util.logging.Logger;
 
 import javax.jdo.PersistenceManager;
 import javax.servlet.http.HttpServlet;
@@ -24,14 +22,12 @@ public class FeedDataStorePopulator extends HttpServlet {
 	 * Default UID
 	 */
 	private static final long serialVersionUID = 1L;
-	private static final Logger log = Logger.getLogger(FeedDataStorePopulator.class.getName());
 	
 	/**
 	 * Vars
 	 */
 	private ArrayList<NewsSource> sources;
 	private NewsSource source;
-	private String language;
 	
 	 /**
      * Processes a GET request contained in the request and sends response
@@ -43,6 +39,8 @@ public class FeedDataStorePopulator extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
                 throws IOException {
    	
+		String sourceXML = req.getParameter("xml");
+		
 		// Add the {@code NewsSource} object to the persistent store
         PersistenceManager pm = PMF.get().getPersistenceManager();
         PrintWriter out = resp.getWriter();
@@ -51,7 +49,7 @@ public class FeedDataStorePopulator extends HttpServlet {
         
         try {
         	SAXParser saxParser = factory.newSAXParser();
-            saxParser.parse(new InputSource("./newssources.xml"), new NewsSourceHandler());
+            saxParser.parse(new InputSource("./" + sourceXML), new NewsSourceHandler());
             if (pm.makePersistentAll(sources) != null) {
                 out.print("success=yes");
             } else {

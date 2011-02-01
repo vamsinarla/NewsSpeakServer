@@ -2,7 +2,6 @@ package com.vn.newsspeak;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.logging.Logger;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -21,7 +20,6 @@ public class FetchSourceServlet extends HttpServlet {
 	 * Default UID
 	 */
 	private static final long serialVersionUID = 1L;
-	private static final Logger log = Logger.getLogger(SearchServlet.class.getName());
 	
 	/**
 	 * GET request handler

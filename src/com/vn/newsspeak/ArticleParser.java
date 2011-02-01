@@ -19,7 +19,17 @@ public class ArticleParser {
 	public ArticleParser() {
 		parser = new Parser();
 	}
+	
 	protected String getContent(String link, String type) throws ParserException {
+		// GET params
+		String api_key = "3dd078fdf99f03a052aaa48579a3db2a4e9520a9";
+
+		String alchemyApiUrl = "http://access.alchemyapi.com/calls/url/URLGetText?apikey=" + api_key + "&url=" + link;
+		
+		return getExtractedText(alchemyApiUrl);
+	}
+	
+	protected String getContent(String link) throws ParserException {
 		// GET params
 		String api_key = "3dd078fdf99f03a052aaa48579a3db2a4e9520a9";
 

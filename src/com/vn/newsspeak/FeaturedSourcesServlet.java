@@ -30,6 +30,8 @@ public class FeaturedSourcesServlet extends HttpServlet {
 	@SuppressWarnings("unused")
 	public void doGet (HttpServletRequest req, HttpServletResponse resp)
     throws IOException {
+		ArrayList<Entity> resultsList = new ArrayList<Entity>();
+		
 		// GET the parameters
 		String country = req.getParameter("country");
 		String language = req.getParameter("language");
@@ -41,24 +43,22 @@ public class FeaturedSourcesServlet extends HttpServlet {
 		// Get the Datastore Service
 		DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
 		
-		ArrayList<Entity> resultsList = new ArrayList<Entity>();
+		// Populate the user with the preferred data sources
+		// Fetch preferred source
+		Query query = new Query("NewsSource");
+		query.addFilter("title", Query.FilterOperator.EQUAL, "Google News");
+		
+		PreparedQuery preferredQuery = datastore.prepare(query);
+		resultsList.addAll(preferredQuery.asList(withLimit(FETCH_LIMIT)));
 		
 		// Populate the user with the data sources for his country
 		// Prepare the query for country
-		Query query = new Query("NewsSource");
+		query = new Query("NewsSource");
 		query.addFilter("country", Query.FilterOperator.EQUAL, country);
 		
 		// Fetch the results
 		PreparedQuery countryQuery = datastore.prepare(query);
-		resultsList = (ArrayList<Entity>) countryQuery.asList(withLimit(FETCH_LIMIT));
-		
-		// Populate the user with the preferred data sources
-		// Fetch preferred source
-		query = new Query("NewsSource");
-		query.addFilter("preferred", Query.FilterOperator.EQUAL, true);
-		
-		PreparedQuery preferredQuery = datastore.prepare(query);
-		resultsList.addAll(preferredQuery.asList(withLimit(FETCH_LIMIT)));
+		resultsList.addAll(countryQuery.asList(withLimit(FETCH_LIMIT)));
 		
 		// If there aren't as many items then populate the rest with US data sources
 		if (resultsList.size() < MIN_LIMIT) {

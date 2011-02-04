@@ -58,11 +58,8 @@ public class MailHandlerServlet extends HttpServlet {
      * Return the primary text content of the message.
      */
     private String getText(Part p) throws MessagingException, IOException {
-		boolean textIsHtml = false;
-		 
-        if (p.isMimeType("text/*")) {
+		if (p.isMimeType("text/*")) {
             String s = (String)p.getContent();
-            textIsHtml = p.isMimeType("text/html");
             return s;
         }
 

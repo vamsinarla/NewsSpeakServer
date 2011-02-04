@@ -8,28 +8,30 @@
 	<type>blog</type>
 	<preferred>true</preferred>
 	<hasCategories>true</hasCategories>
-	<defaultLink>http://news.google.com/news</defaultLink>
+	<defaultLink><![CDATA[http://news.google.com/news/section?cf=all&output=rss]]></defaultLink>
 	<categories>
         <title>Top Stories</title>
         <title>Most Popular</title>
-        <title>Country</title>
+        <title>National</title>
         <title>World</title>
         <title>Business</title>
         <title>Sci/Tech</title>
         <title>Entertainment</title>
         <title>Sports</title>
         <title>Health</title>
+        <title>Spotlight</title>
     </categories>
     <categoryUrls>
-        <link>http://news.google.com/news</link>
-        <link>http://news.google.com/news</link>
-        <link>http://news.google.com/news</link>
-        <link>http://news.google.com/news</link>
-        <link>http://news.google.com/news</link>
-        <link>http://news.google.com/news</link>
-        <link>http://news.google.com/news</link>
-        <link>http://news.google.com/news</link>
-        <link>http://news.google.com/news</link>
+        <link><![CDATA[http://news.google.com/news/section?cf=all&output=rss]]></link>
+        <link><![CDATA[http://news.google.com/news/section?cf=all&topic=po&output=rss]]></link>
+        <link><![CDATA[http://news.google.com/news/section?cf=all&topic=n&output=rss]]></link>
+        <link><![CDATA[http://news.google.com/news/section?cf=all&topic=w&output=rss]]></link>
+        <link><![CDATA[http://news.google.com/news/section?cf=all&topic=b&output=rss]]></link>
+        <link><![CDATA[http://news.google.com/news/section?cf=all&topic=t&output=rss]]></link>
+        <link><![CDATA[http://news.google.com/news/section?cf=all&topic=e&output=rss]]></link>
+        <link><![CDATA[http://news.google.com/news/section?cf=all&topic=s&output=rss]]></link>
+        <link><![CDATA[http://news.google.com/news/section?cf=all&topic=m&output=rss]]></link>
+        <link><![CDATA[http://news.google.com/news/section?cf=all&topic=ir&output=rss]]></link>
     </categoryUrls>
 </source>
 </sources>

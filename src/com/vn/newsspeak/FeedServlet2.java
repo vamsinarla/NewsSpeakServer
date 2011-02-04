@@ -60,7 +60,7 @@ public class FeedServlet2 extends HttpServlet {
             
             addTagElement(writer, "title", item.getTitle(), true);
             addTagElement(writer, "description", item.getDescriptionAsText(), true);
-            addTagElement(writer, "link", item.getLink().toString(), false);
+            addTagElement(writer, "link", item.getLink().toString(), true);
             writer.println("</item>");
         }
         writer.println("</items>");

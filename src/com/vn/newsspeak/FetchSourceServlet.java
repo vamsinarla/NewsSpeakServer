@@ -24,7 +24,7 @@ public class FetchSourceServlet extends HttpServlet {
 	/**
 	 * GET request handler
 	 */
-	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		// GET params
 		String sourceName = req.getParameter("sourceName");
 		

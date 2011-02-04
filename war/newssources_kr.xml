@@ -6,7 +6,7 @@
 	<type>newspaper</type>
 	<language>en</language>
 	<country>KR</country>
-	<perferred>false</perferred>
+	<preferred>true</preferred>
 	<hasCategories>false</hasCategories>
 	<categories>
 		<title>Headlines</title>
@@ -32,7 +32,7 @@
 	<type>newspaper</type>
 	<language>EN</language>
 	<country>KR</country>
-	<preferred>false</preferred>
+	<preferred>true</preferred>
 	<hasCategories>false</hasCategories>
 	<defaultLink>http://www.koreatimes.co.kr/www/rss/seoul.xml</defaultLink>
 </source>
@@ -42,7 +42,7 @@
 	<type>newspaper</type>
 	<language>en</language>
 	<country>KR</country>
-	<perferred>false</perferred>
+	<preferred>true</preferred>
 	<hasCategories>false</hasCategories>
 	<defaultLink>http://www.hani.co.kr/rss/english_edition/</defaultLink>
 </source>

@@ -27,12 +27,20 @@ public class ArticleServlet2 extends HttpServlet {
 		try {
 			// POST parameters
 			String articleUrl = req.getParameter("link");
+			String source = req.getParameter("source");
+			String type = req.getParameter("type");
 			
-			// Get the default parser
-			ArticleParser parser = factory.getParser("");
-			String content = parser.getContent(articleUrl);
+			// Since this parameter is optional and some versions of NewsSpeak may not use it. Check this.
+			if (type == null) {
+				type = "";
+			}
 			
-			// Write the output
+			if (source == null) {
+				source = "";
+			}
+			
+			ArticleParser parser = factory.getParser(source);
+			String content = parser.getContent(articleUrl, type);
 			PrintWriter writer = resp.getWriter();
 			writer.write(content);
 			

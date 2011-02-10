@@ -3,6 +3,7 @@ package com.vn.newsspeak;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
@@ -25,11 +26,13 @@ public class ArticleParser {
 		parser = new Parser();
 	}
 	
-	protected String getContent(String link, String type) throws ParserException {
+	protected String getContent(String link, String type) 
+	throws ParserException, UnsupportedEncodingException {
+	
 		String api_key = "3dd078fdf99f03a052aaa48579a3db2a4e9520a9";
 		
-		String postData = URLEncoder.encode("apikey") + "=" + api_key + "&";
-		postData += URLEncoder.encode("url") + "=" + link;
+		String postData = URLEncoder.encode("apikey", "UTF-8") + "=" + api_key + "&";
+		postData += URLEncoder.encode("url",  "UTF-8") + "=" + link;
 
 		String alchemyApiUrl = "http://access.alchemyapi.com/calls/url/URLGetText";
 		InputStream responseStream = null;

@@ -2,7 +2,7 @@ package com.vn.newsspeak;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Dictionary;
+import java.util.HashMap;
 import java.util.logging.Logger;
 
 import javax.servlet.http.HttpServlet;
@@ -30,9 +30,13 @@ public class ArticleServlet extends HttpServlet {
 			String articleUrl = req.getParameter("url");
 			String format = req.getParameter("format");
 			
+			HashMap<String, String> apiArgs = new HashMap();
+			apiArgs.put(AlchemyService.OUTPUT_MODE, format);
+			apiArgs.put(AlchemyService.URL, articleUrl);
+			
 			AlchemyService alchemyObj = new AlchemyService();
 			PrintWriter writer = resp.getWriter();
-			writer.write(alchemyObj.makeApiCall(GET_CONTENT_API, ));
+			writer.write(alchemyObj.makeApiCall(GET_CONTENT_API, apiArgs));
 			
 		} catch(Exception exception) {
 			log.severe(exception.getMessage());

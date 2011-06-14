@@ -17,9 +17,9 @@ import javax.servlet.http.HttpServletResponse;
  *
  */
 @SuppressWarnings("serial")
-public class ArticleServlet extends HttpServlet {
+public class ArticleContentServlet extends HttpServlet {
 	
-	private static final Logger log = Logger.getLogger(ArticleServlet.class.getName());
+	private static final Logger log = Logger.getLogger(ArticleContentServlet.class.getName());
 	private static final String GET_CONTENT_API= "URLGetText";
 	
 	public void doPost(HttpServletRequest req, HttpServletResponse resp)
@@ -30,7 +30,7 @@ public class ArticleServlet extends HttpServlet {
 			String articleUrl = req.getParameter("url");
 			String format = req.getParameter("format");
 			
-			HashMap<String, String> apiArgs = new HashMap();
+			HashMap<String, String> apiArgs = new HashMap<String, String>();
 			apiArgs.put(AlchemyService.OUTPUT_MODE, format);
 			apiArgs.put(AlchemyService.URL, articleUrl);
 			

@@ -5,12 +5,20 @@ xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<servlet>
-		<servlet-name>NewsSpeakServer</servlet-name>
-		<servlet-class>com.vn.newsspeakserver.NewsSpeakServerServlet</servlet-class>
+		<servlet-name>ArticleContentServlet</servlet-name>
+		<servlet-class>com.vn.newsspeak.ArticleContentServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>NewsSpeakServer</servlet-name>
-		<url-pattern>/newsspeakserver</url-pattern>
+		<servlet-name>ArticleContentServlet</servlet-name>
+		<url-pattern>/article/content</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ArticleEntityServlet</servlet-name>
+		<servlet-class>com.vn.newsspeak.ArticleEntityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ArticleEntityServlet</servlet-name>
+		<url-pattern>/article/entity</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>

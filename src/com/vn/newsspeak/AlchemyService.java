@@ -16,8 +16,8 @@ public class AlchemyService {
 	private static final String apiKey = "3dd078fdf99f03a052aaa48579a3db2a4e9520a9";
 	private static final String alchemyApiUrl = "http://access.alchemyapi.com/calls/url/";
 	
-	public static final String OUTPUT_MODE = "json";
-	public static final String URL = null;
+	public static final String OUTPUT_MODE = "outputMode";
+	public static final String URL = "url";
 	
 	AlchemyService() {
 		
@@ -38,7 +38,7 @@ public class AlchemyService {
 		    wr.flush();
 		    
 		    responseStream = conn.getInputStream();
-		    result = responseStream.toString();
+		    result = Utils.getStringFromInputStream(responseStream);
 		    
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -50,8 +50,10 @@ public class AlchemyService {
 	private String makeApiArgs(HashMap<String, String> apiArgs) throws UnsupportedEncodingException {
 		String args = "";
 		
+		apiArgs.put("apikey", apiKey);
+		
 		// Get a set of the entries
-		 Iterator iter = apiArgs.entrySet().iterator();
+		 Iterator<?> iter = apiArgs.entrySet().iterator();
 		// Display elements
 		while(iter.hasNext()) {
 			Map.Entry me = (Map.Entry)iter.next();

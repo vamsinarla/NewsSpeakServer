@@ -20,6 +20,8 @@ public class ArticleEntityServlet extends HttpServlet  {
 	private static final Logger log = Logger.getLogger(ArticleContentServlet.class.getName());
 	private static final String GET_ENTITIES_API= "URLGetRankedNamedEntities";
 	
+	private static final String PARAM_MAX_ENTITIES = "maxRetrieve";
+	
 	public void doPost(HttpServletRequest req, HttpServletResponse resp)
     throws IOException {
 		
@@ -31,6 +33,8 @@ public class ArticleEntityServlet extends HttpServlet  {
 			HashMap<String, String> apiArgs = new HashMap<String, String>();
 			apiArgs.put(AlchemyService.OUTPUT_MODE, format);
 			apiArgs.put(AlchemyService.URL, articleUrl);
+			
+			apiArgs.put(PARAM_MAX_ENTITIES, "10");
 			
 			AlchemyService alchemyObj = new AlchemyService();
 			PrintWriter writer = resp.getWriter();
